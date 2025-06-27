@@ -13,6 +13,7 @@ movies = pd.DataFrame(data_dict)
 from scipy.sparse import load_npz
 
 similarity = load_npz("similarity_sparse.npz")
+similarity =similarity.toarray()
 
 
 # Function to fetch movie poster from TMDB API
